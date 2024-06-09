@@ -1,0 +1,81 @@
+ 
+<html>
+    <head>
+      <title>gesture app</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  
+    <body>
+    <div class="container">
+    
+      <center>
+  
+        <br><br>
+        <h3 class="btn btn-primary heading">
+        Gesture App
+         <br>
+        </h3>
+  
+        <br><br>
+      
+        <p style="font-size: 22px;">Take your selfie of a hand gesture to know about its meaning
+            <br>
+          <b style="color:rgb(255, 255, 255)">On the following gestures the model is trained : </b>
+          <br>
+          <b> &#9994 | &#128077 | &#9996 | &#128078 | &#129304</b>
+          <br>
+
+        </p>
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+         <label>Webcam View - </label>
+  
+         <br><br>
+  
+         <div id="camera"></div>
+         <br>
+  
+         <button class="btn btn-primary" onclick="capture()">Capture Image</button>
+  
+        </div>
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label>Prediction 1 - </label>
+          <h4 class="name" id="result_name"></h4>
+          <h4 class="gesture" id="gesture1"></h4>
+          <br>
+          <label>Prediction 2 - </label>
+          <h4 class="name" id="result_name2"></h4>
+          <h4 class="gesture" id="gesture2"></h4>
+        </div>
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Snapshot - </label>
+  
+          <br><br>
+  
+          <div id="output"></div>
+          <br>
+  
+          <button class="btn btn-primary" onclick="check()">Predict</button>
+  
+        </div>
+  
+      </center>
+  
+    </div>
+  
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
+  
+   

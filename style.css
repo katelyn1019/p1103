@@ -1,0 +1,40 @@
+body
+{
+  color: white;
+  background-color: darksalmon;
+}
+span
+{
+  font-size: 30px;
+}
+#camera , #output
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+}
+#result_name ,#result_name2  
+{
+  color: black;
+}
+.name
+{
+  font-size: 40px;
+}
+.gesture
+{
+  font-size:48px;
+}
+
+.heading{
+  font-size: 20px;
+  border-radius: 10px;
+  letter-spacing: 10px;
+}
+label{
+  border-radius: 100px;
+  background-color: white;
+  color: black;
+  width: 40%;
+  padding: 10px;
+}
